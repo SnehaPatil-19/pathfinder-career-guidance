@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PathFinder — Career Guidance for Students</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,300;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<!-- ════════════ LANDING PAGE ════════════ -->
+<div class="page active" id="landingPage">
+  <nav>
+    <a class="nav-logo" href="#">
+      <div class="nav-logo-mark">🧭</div>
+      <span class="nav-logo-text">PathFinder</span>
+    </a>
+    <div class="nav-links">
+      <button class="nav-link" onclick="smoothScroll('features')">Features</button>
+      <button class="nav-link" onclick="smoothScroll('tracks')">Career Tracks</button>
+      <button class="nav-link" onclick="smoothScroll('how')">How it Works</button>
+      <button class="nav-cta" onclick="showApp()">Start My Journey →</button>
+    </div>
+  </nav>
+
+  <section style="background: var(--bg);">
+    <div class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="dot"></span> AI-Powered Career Guidance</div>
+        <h1 class="hero-title">Discover Your<br><em>Dream Career</em><br>Path Today</h1>
+        <p class="hero-desc">PathFinder uses cloud-powered AI to give school students a personalized roadmap — from your current interests to your future career. Completely free, deeply personal.</p>
+        <div class="hero-actions">
+          <button class="btn-primary" onclick="showApp()">🚀 Start for Free</button>
+          <button class="btn-secondary" onclick="smoothScroll('features')">Learn More</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Career Tracks</span></div>
+          <div class="stat"><span class="stat-num">AI</span><span class="stat-label">Personalized</span></div>
+          <div class="stat"><span class="stat-num">☁️</span><span class="stat-label">Cloud Powered</span></div>
+        </div>
+      </div>
+
+      <!-- Animated Career Universe -->
+      <div class="hero-visual">
+        <div class="orbit-wrap">
+          <div class="orbit-center">
+            <div class="orbit-center-ring"></div>
+            <div class="orbit-center-ring r2"></div>
+            <div class="orbit-center-core">🎓</div>
+          </div>
+          <div class="orb-track t1"><div class="orb-planet" style="--clr:#e8603c;">💻<span>Tech</span></div></div>
+          <div class="orb-track t2"><div class="orb-planet" style="--clr:#2cb97a;">🏥<span>Medicine</span></div></div>
+          <div class="orb-track t3"><div class="orb-planet" style="--clr:#3c7ae8;">⚖️<span>Law</span></div></div>
+          <div class="orb-track t4"><div class="orb-planet" style="--clr:#f0a500;">🎨<span>Arts</span></div></div>
+          <div class="orb-track t5"><div class="orb-planet" style="--clr:#7c5cfc;">💼<span>Business</span></div></div>
+          <div class="orb-track t6"><div class="orb-planet" style="--clr:#e91e8c;">✈️<span>Defence</span></div></div>
+        </div>
+        <div class="hv-card hv-card-a">
+          <div class="hv-row"><div class="hv-icon" style="background:#e8faf3;">✨</div><div><div class="hv-title">AI Report Ready</div><div class="hv-sub">in under 30 seconds</div></div></div>
+        </div>
+        <div class="hv-card hv-card-b">
+          <div class="hv-row"><div class="hv-icon" style="background:#ebf2fe;">☁️</div><div><div class="hv-title">Cloud Powered</div></div></div>
+        </div>
+        <div class="hv-card hv-card-c">
+          <div class="hv-exam-title">50+ Career Paths</div>
+          <div class="exam-tags">
+            <span class="exam-tag" style="background:#fef0eb;color:#e8603c;">IIT/JEE</span>
+            <span class="exam-tag" style="background:#e8faf3;color:#2cb97a;">NEET</span>
+            <span class="exam-tag" style="background:#ebf2fe;color:#3c7ae8;">CLAT</span>
+            <span class="exam-tag" style="background:#fff8e6;color:#f0a500;">CAT</span>
+            <span class="exam-tag" style="background:#f0ecff;color:#7c5cfc;">NDA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features-section">
+    <div class="section-center">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Everything a Student Needs<br>to Navigate Their Future</h2>
+      <p class="section-sub">From personality-based matching to step-by-step roadmaps, we've got your career journey covered.</p>
+      <div class="features-grid">
+        <div class="feature-card"><div class="feature-icon fi-orange">🎯</div><div class="feature-title">Personalized Matching</div><p class="feature-desc">Our AI analyzes your interests, strengths, and goals to match you with careers you'll genuinely love.</p></div>
+        <div class="feature-card"><div class="feature-icon fi-blue">🗺️</div><div class="feature-title">Step-by-Step Roadmap</div><p class="feature-desc">Get a clear action plan: which subjects to focus on, exams to prepare for, and skills to develop.</p></div>
+        <div class="feature-card"><div class="feature-icon fi-green">📚</div><div class="feature-title">Stream Guidance</div><p class="feature-desc">Not sure which stream to pick after Class 10? We help you choose Science, Commerce, or Arts wisely.</p></div>
+        <div class="feature-card"><div class="feature-icon fi-yellow">🏆</div><div class="feature-title">Entrance Exam Guide</div><p class="feature-desc">Know exactly which competitive exams (JEE, NEET, CLAT, CAT, NDA) are relevant to your path.</p></div>
+        <div class="feature-card"><div class="feature-icon fi-purple">💡</div><div class="feature-title">Skill Gap Analysis</div><p class="feature-desc">Discover what skills you need to build now and which activities, clubs, or courses will help.</p></div>
+        <div class="feature-card"><div class="feature-icon fi-pink">💬</div><div class="feature-title">AI Mentor Chat</div><p class="feature-desc">Ask any career question and get thoughtful, age-appropriate guidance powered by advanced AI.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="how-section">
+    <div class="section-label">Simple Process</div>
+    <h2 class="section-title">Four Steps to Your Perfect Career Path</h2>
+    <div class="steps-grid">
+      <div class="step"><div class="step-num">📝</div><div class="step-line done"></div><div class="step-title">Tell Us About You</div><p class="step-desc">Share your class, stream, hobbies, and dreams.</p></div>
+      <div class="step"><div class="step-num">⚡</div><div class="step-line done"></div><div class="step-title">AI Analysis</div><p class="step-desc">Our cloud AI deeply analyzes your unique profile.</p></div>
+      <div class="step"><div class="step-num">🎯</div><div class="step-line"></div><div class="step-title">Get Your Report</div><p class="step-desc">Receive a detailed, personalized career report.</p></div>
+      <div class="step"><div class="step-num">🚀</div><div class="step-title">Take Action</div><p class="step-desc">Follow your roadmap and build your future!</p></div>
+    </div>
+  </section>
+
+  <section id="tracks" class="tracks-section">
+    <div class="section-center">
+      <div class="section-label">Popular Tracks</div>
+      <h2 class="section-title">Explore 50+ Career Tracks</h2>
+      <p class="section-sub">From engineering to arts, from medicine to entrepreneurship — every passion has a path.</p>
+      <div class="tracks-scroll">
+        <div class="track-card tc-orange" onclick="showApp()"><div class="track-icon">💻</div><div class="track-title">Technology & Engineering</div><div class="track-sub">Software, AI, Robotics, Mechanical, Civil</div><div class="track-arrow">Explore <span>→</span></div></div>
+        <div class="track-card tc-blue" onclick="showApp()"><div class="track-icon">🏥</div><div class="track-title">Medicine & Healthcare</div><div class="track-sub">MBBS, Nursing, Pharmacy, Biotech</div><div class="track-arrow">Explore <span>→</span></div></div>
+        <div class="track-card tc-green" onclick="showApp()"><div class="track-icon">⚖️</div><div class="track-title">Law & Social Sciences</div><div class="track-sub">LLB, IPS, Civil Services, Psychology</div><div class="track-arrow">Explore <span>→</span></div></div>
+        <div class="track-card tc-yellow" onclick="showApp()"><div class="track-icon">💼</div><div class="track-title">Business & Finance</div><div class="track-sub">MBA, CA, Banking, Entrepreneurship</div><div class="track-arrow">Explore <span>→</span></div></div>
+        <div class="track-card tc-purple" onclick="showApp()"><div class="track-icon">🎨</div><div class="track-title">Arts & Design</div><div class="track-sub">Fine Arts, UX/UI, Architecture, Fashion</div><div class="track-arrow">Explore <span>→</span></div></div>
+        <div class="track-card tc-pink" onclick="showApp()"><div class="track-icon">🎭</div><div class="track-title">Media & Entertainment</div><div class="track-sub">Journalism, Film, Music, Content</div><div class="track-arrow">Explore <span>→</span></div></div>
+        <div class="track-card tc-teal" onclick="showApp()"><div class="track-icon">🌱</div><div class="track-title">Environment & Science</div><div class="track-sub">Research, Climate, Sustainability</div><div class="track-arrow">Explore <span>→</span></div></div>
+        <div class="track-card tc-indigo" onclick="showApp()"><div class="track-icon">✈️</div><div class="track-title">Defence & Government</div><div class="track-sub">IAS, Army, Navy, Air Force, Police</div><div class="track-arrow">Explore <span>→</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div style="max-width:1100px;margin:0 auto;padding:0 40px;">
+    <div class="cta-banner">
+      <div class="cta-text"><h2>Ready to Find Your Path?</h2><p>Takes just 3 minutes. No signup needed. Get your personalized AI career guidance report right now.</p></div>
+      <div class="cta-actions">
+        <button class="btn-white" onclick="showApp()">🧭 Start Now — It's Free</button>
+        <button class="btn-ghost" onclick="smoothScroll('how')">See How It Works</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo"><div class="footer-logo-mark">🧭</div>PathFinder</div>
+    <p class="footer-note">© 2025 PathFinder · Built for students · Mini Cloud Project</p>
+    <div class="footer-cloud">☁️ Powered by Cloud</div>
+  </footer>
+</div>
+
+<!-- ════════════ APP PAGE ════════════ -->
+<div class="page" id="appPage">
+  <div class="app-layout">
+    <div class="app-nav">
+      <div class="app-nav-logo"><div class="app-nav-mark">🧭</div><span>PathFinder</span></div>
+      <button class="btn-secondary" onclick="showLanding()">← Back to Home</button>
+    </div>
+    <div class="app-main">
+      <div class="stepper" id="stepper">
+        <div class="stepper-step"><div class="step-bubble active" id="sb1">1</div><div class="step-line" id="sl1"></div></div>
+        <div class="stepper-step"><div class="step-bubble" id="sb2">2</div><div class="step-line" id="sl2"></div></div>
+        <div class="stepper-step"><div class="step-bubble" id="sb3">3</div><div class="step-line" id="sl3"></div></div>
+        <div class="stepper-step"><div class="step-bubble" id="sb4">4</div></div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="form-step active" id="step1">
+        <div class="step-header"><div class="step-number">Step 1 of 4</div><h2 class="step-title-text">Let's get to know you! 👋</h2><p class="step-desc-text">Tell us about yourself so we can personalize your guidance.</p></div>
+        <div class="form-grid">
+          <div class="form-group"><label class="form-label">Your Name</label><input class="form-input" id="s1Name" placeholder="e.g. Priya Sharma"/></div>
+          <div class="form-group"><label class="form-label">Current Class / Grade</label><select class="form-select" id="s1Class"><option value="">Select your class</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option><option>Just Passed Class 12</option></select></div>
+          <div class="form-group"><label class="form-label">Stream</label><select class="form-select" id="s1Stream"><option value="">Select stream</option><option>Science (PCM)</option><option>Science (PCB)</option><option>Commerce</option><option>Arts / Humanities</option><option>Not yet decided</option></select></div>
+          <div class="form-group"><label class="form-label">City / State</label><input class="form-input" id="s1City" placeholder="e.g. Mumbai, Maharashtra"/></div>
+          <div class="form-group full"><label class="form-label">School Board</label>
+            <div class="choice-grid" style="grid-template-columns:repeat(4,1fr);">
+              <div class="choice-card" onclick="selectBoard(this,'CBSE')"><div class="choice-emoji">📘</div><div class="choice-label">CBSE</div></div>
+              <div class="choice-card" onclick="selectBoard(this,'ICSE')"><div class="choice-emoji">📗</div><div class="choice-label">ICSE</div></div>
+              <div class="choice-card" onclick="selectBoard(this,'State Board')"><div class="choice-emoji">📙</div><div class="choice-label">State Board</div></div>
+              <div class="choice-card" onclick="selectBoard(this,'IB/IGCSE')"><div class="choice-emoji">📕</div><div class="choice-label">IB / IGCSE</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-nav"><div></div><button class="btn-next" onclick="goStep(2)">Continue →</button></div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="form-step" id="step2">
+        <div class="step-header"><div class="step-number">Step 2 of 4</div><h2 class="step-title-text">What lights you up? 🔥</h2><p class="step-desc-text">Select topics and activities that genuinely excite you.</p></div>
+        <div class="form-group" style="margin-bottom:20px;"><label class="form-label">Academic Subjects I Love</label>
+          <div class="interest-grid" id="subjectGrid">
+            <span class="interest-tag" onclick="toggleTag(this)">🔬 Physics</span><span class="interest-tag" onclick="toggleTag(this)">🧪 Chemistry</span><span class="interest-tag" onclick="toggleTag(this)">🧬 Biology</span><span class="interest-tag" onclick="toggleTag(this)">📐 Mathematics</span><span class="interest-tag" onclick="toggleTag(this)">💻 Computer Science</span><span class="interest-tag" onclick="toggleTag(this)">📖 Literature</span><span class="interest-tag" onclick="toggleTag(this)">🌍 Geography</span><span class="interest-tag" onclick="toggleTag(this)">📜 History</span><span class="interest-tag" onclick="toggleTag(this)">💰 Economics</span><span class="interest-tag" onclick="toggleTag(this)">📊 Accountancy</span><span class="interest-tag" onclick="toggleTag(this)">🗣️ English</span><span class="interest-tag" onclick="toggleTag(this)">🎨 Fine Arts</span><span class="interest-tag" onclick="toggleTag(this)">🎵 Music</span><span class="interest-tag" onclick="toggleTag(this)">⚽ Physical Education</span>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom:20px;"><label class="form-label">Hobbies & Activities</label>
+          <div class="interest-grid" id="hobbyGrid">
+            <span class="interest-tag" onclick="toggleTag(this)">🎮 Gaming / Coding</span><span class="interest-tag" onclick="toggleTag(this)">✍️ Writing / Blogging</span><span class="interest-tag" onclick="toggleTag(this)">📸 Photography</span><span class="interest-tag" onclick="toggleTag(this)">🎬 Filmmaking</span><span class="interest-tag" onclick="toggleTag(this)">🏃 Sports / Athletics</span><span class="interest-tag" onclick="toggleTag(this)">🎭 Drama / Theatre</span><span class="interest-tag" onclick="toggleTag(this)">🤝 Volunteering / NGO</span><span class="interest-tag" onclick="toggleTag(this)">📈 Investing / Finance</span><span class="interest-tag" onclick="toggleTag(this)">🌿 Nature / Environment</span><span class="interest-tag" onclick="toggleTag(this)">🍳 Cooking / Baking</span><span class="interest-tag" onclick="toggleTag(this)">🎤 Public Speaking</span><span class="interest-tag" onclick="toggleTag(this)">🛠️ Building / DIY</span><span class="interest-tag" onclick="toggleTag(this)">📚 Reading Books</span><span class="interest-tag" onclick="toggleTag(this)">🎨 Drawing / Art</span>
+          </div>
+        </div>
+        <div class="form-nav"><button class="btn-back" onclick="goStep(1)">← Back</button><button class="btn-next" onclick="goStep(3)">Continue →</button></div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="form-step" id="step3">
+        <div class="step-header"><div class="step-number">Step 3 of 4</div><h2 class="step-title-text">Your strengths & ambitions 💪</h2><p class="step-desc-text">Help us understand what you're great at.</p></div>
+        <div class="form-grid">
+          <div class="form-group full"><label class="form-label">Your biggest strengths</label>
+            <div class="choice-grid">
+              <div class="choice-card" onclick="toggleChoice(this)"><div class="choice-emoji">🧠</div><div class="choice-label">Analytical Thinking</div><div class="choice-sub">I love solving complex problems</div></div>
+              <div class="choice-card" onclick="toggleChoice(this)"><div class="choice-emoji">🎨</div><div class="choice-label">Creativity</div><div class="choice-sub">I think outside the box</div></div>
+              <div class="choice-card" onclick="toggleChoice(this)"><div class="choice-emoji">🗣️</div><div class="choice-label">Communication</div><div class="choice-sub">I express ideas well</div></div>
+              <div class="choice-card" onclick="toggleChoice(this)"><div class="choice-emoji">👥</div><div class="choice-label">Leadership</div><div class="choice-sub">I like taking charge</div></div>
+              <div class="choice-card" onclick="toggleChoice(this)"><div class="choice-emoji">❤️</div><div class="choice-label">Empathy</div><div class="choice-sub">I care deeply for others</div></div>
+              <div class="choice-card" onclick="toggleChoice(this)"><div class="choice-emoji">⚡</div><div class="choice-label">Hustle & Drive</div><div class="choice-sub">I work extremely hard</div></div>
+            </div>
+          </div>
+          <div class="form-group"><label class="form-label">Dream career</label><input class="form-input" id="s3Dream" placeholder="e.g. Game developer, Doctor, IAS..."/></div>
+          <div class="form-group"><label class="form-label">Academic performance</label><select class="form-select" id="s3Grade"><option value="">Select</option><option>Excellent (90%+)</option><option>Good (75–90%)</option><option>Average (60–75%)</option><option>Need Improvement (below 60%)</option></select></div>
+          <div class="form-group full"><label class="form-label">Anything else we should know?</label><p class="form-hint">Achievements, challenges, family context, goals abroad...</p><textarea class="form-textarea" id="s3Extra" placeholder="e.g. Won national science olympiad, parents are doctors but I love art..."></textarea></div>
+        </div>
+        <div class="form-nav"><button class="btn-back" onclick="goStep(2)">← Back</button><button class="btn-next" onclick="goStep(4)">Continue →</button></div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="form-step" id="step4">
+        <div class="step-header"><div class="step-number">Step 4 of 4</div><h2 class="step-title-text">One last thing! 🎯</h2><p class="step-desc-text">What matters most in your future career?</p></div>
+        <div class="form-group" style="margin-bottom:24px;"><label class="form-label">I care most about...</label>
+          <div class="interest-grid" id="valuesGrid">
+            <span class="interest-tag" onclick="toggleTag(this)">💰 High Salary</span><span class="interest-tag" onclick="toggleTag(this)">❤️ Helping People</span><span class="interest-tag" onclick="toggleTag(this)">🚀 Innovation & Startups</span><span class="interest-tag" onclick="toggleTag(this)">🌍 Working Abroad</span><span class="interest-tag" onclick="toggleTag(this)">⚖️ Work-Life Balance</span><span class="interest-tag" onclick="toggleTag(this)">🏆 Fame & Recognition</span><span class="interest-tag" onclick="toggleTag(this)">🔒 Job Security</span><span class="interest-tag" onclick="toggleTag(this)">🎓 Continuous Learning</span><span class="interest-tag" onclick="toggleTag(this)">🌱 Social Impact</span><span class="interest-tag" onclick="toggleTag(this)">🎨 Creative Freedom</span>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom:24px;"><label class="form-label">Preferred work style</label>
+          <div class="choice-grid" style="grid-template-columns:repeat(3,1fr);">
+            <div class="choice-card" onclick="selectWorkStyle(this,'Team Player')"><div class="choice-emoji">👥</div><div class="choice-label">Team Player</div></div>
+            <div class="choice-card" onclick="selectWorkStyle(this,'Solo Achiever')"><div class="choice-emoji">🧘</div><div class="choice-label">Solo Achiever</div></div>
+            <div class="choice-card" onclick="selectWorkStyle(this,'Born Leader')"><div class="choice-emoji">👑</div><div class="choice-label">Born Leader</div></div>
+          </div>
+        </div>
+        <div class="ready-box"><span style="font-size:1.6rem;">✨</span><div><div style="font-weight:700;font-size:0.9rem;color:var(--accent);margin-bottom:3px;">You're all set!</div><div style="font-size:0.82rem;color:var(--muted);line-height:1.5;">Our cloud AI will now analyze your profile and generate a personalized career report. Takes about 30 seconds.</div></div></div>
+        <div class="form-nav"><button class="btn-back" onclick="goStep(3)">← Back</button><button class="btn-next" id="generateBtn" onclick="generateReport()" style="background:linear-gradient(135deg,var(--accent),#f06240);padding:14px 32px;font-size:1rem;">✨ Generate My Report</button></div>
+      </div>
+
+      <div id="appLoading">
+        <div class="loader-graphic"><div class="loader-ring"></div><div class="loader-ring r2"></div></div>
+        <div class="loader-title">Analyzing your profile...</div>
+        <div class="loader-sub">Our cloud AI is working on your personalized report</div>
+        <div class="loader-steps" id="loaderSteps"></div>
+      </div>
+
+      <div id="appResults">
+        <button class="btn-new-search" onclick="resetApp()">← Start a New Analysis</button>
+        <div class="results-hero">
+          <div class="results-hi">Your Personalized Report</div>
+          <div class="results-name" id="resultName">Career Guidance Report</div>
+          <div class="results-tagline" id="resultTagline">Powered by Cloud AI</div>
+        </div>
+        <div class="result-grid" id="resultGrid"></div>
+        <div class="cloud-ribbon">
+          <div class="cloud-ribbon-icon">☁️</div>
+          <div class="cloud-ribbon-text"><h4>Cloud Architecture</h4><p>Frontend on <strong>AWS S3 + CloudFront</strong> · AI via <strong>Groq API</strong> · Secure proxy via <strong>AWS Lambda</strong> · Reports in <strong>DynamoDB</strong> · Auth via <strong>Cognito</strong>.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
